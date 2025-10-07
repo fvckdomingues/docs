@@ -1,0 +1,158 @@
+---
+title: "Sistema Anti-Fraude"
+description: "Proteja sua loja contra fraudes e chargebacks"
+---
+
+# Sistema Anti-Fraude
+
+Nosso sistema é objetivo: você pode bloquear bancos que não deseja aceitar e banir clientes por IP ou e-mail. Simples, transparente e sob seu controle.
+
+<CardGroup cols={2}>
+  <Card title="Bloqueio por banco" icon="building-columns">
+    Escolha quais bancos/provedores você aceita
+  </Card>
+  
+  <Card title="Banir por IP" icon="location-dot">
+    Bloqueie endereços IP específicos
+  </Card>
+  
+  <Card title="Banir por e-mail" icon="envelope">
+    Impeça compras de e-mails indesejados
+  </Card>
+  
+  <Card title="Regras simples" icon="sliders">
+    Controle total sobre suas configurações
+  </Card>
+</CardGroup>
+
+---
+
+## Recursos de proteção
+
+### Bloqueio por banco/provedor
+
+Você tem controle total sobre quais instituições financeiras aceitar:
+
+<Steps>
+  <Step title="Acesse o anti-fraude">
+    Vá em **Configurações > Integrações > Anti-Fraude**
+  </Step>
+  
+  <Step title="Gerencie bancos">
+    Na seção "Bloqueio por banco", visualize todos os bancos disponíveis
+  </Step>
+  
+  <Step title="Bloqueie ou permita">
+    Marque os bancos que você **não** deseja aceitar pagamentos
+  </Step>
+  
+  <Step title="Salve as alterações">
+    As regras entram em vigor imediatamente
+  </Step>
+</Steps>
+
+<Tip>
+  Útil para bloquear bancos digitais específicos que possam ter alto índice de chargebacks no seu nicho.
+</Tip>
+
+---
+
+### Banimento por IP
+
+Crie uma lista de IPs banidos para impedir novas tentativas do mesmo endereço:
+
+<AccordionGroup>
+  <Accordion icon="plus" title="Adicionar IP à lista">
+    1. Copie o endereço IP do cliente (disponível nos detalhes do pedido)
+    2. Cole na seção "Banir por IP"
+    3. Adicione uma nota opcional (ex: "Tentativa de fraude em 10/01/2025")
+    4. Salve
+  </Accordion>
+  
+  <Accordion icon="list" title="Gerenciar lista de IPs">
+    Visualize todos os IPs banidos, com data de adição e motivo. Você pode remover IPs da lista a qualquer momento.
+  </Accordion>
+  
+  <Accordion icon="shield-check" title="Como funciona">
+    Quando um IP banido tenta acessar sua loja, ele é bloqueado automaticamente antes mesmo de visualizar os produtos.
+  </Accordion>
+</AccordionGroup>
+
+<Warning>
+  Cuidado ao banir IPs de redes compartilhadas (empresas, universidades), pois pode bloquear múltiplos usuários legítimos.
+</Warning>
+
+---
+
+### Banimento por e-mail
+
+Bloqueie clientes pelo e-mail para evitar novas compras indesejadas:
+
+<Steps>
+  <Step title="Identifique o e-mail">
+    Nos detalhes do pedido suspeito, copie o e-mail do cliente
+  </Step>
+  
+  <Step title="Adicione à lista negra">
+    Em **Anti-Fraude > Banir por e-mail**, adicione o endereço
+  </Step>
+  
+  <Step title="Bloqueio automático">
+    Tentativas de compra com esse e-mail serão bloqueadas automaticamente
+  </Step>
+</Steps>
+
+<Note>
+  O sistema também bloqueia variações comuns do e-mail (ex: usuario+1@email.com, usuario@email.com).
+</Note>
+
+---
+
+## Regras e configurações
+
+### Habilitar/Desabilitar regras
+
+Você pode ativar ou desativar cada tipo de bloqueio independentemente:
+
+\`\`\`json
+{
+  "bloqueio_banco": true,
+  "bloqueio_ip": true,
+  "bloqueio_email": true,
+  "modo_estrito": false
+}
+\`\`\`
+
+### Modo estrito
+
+Quando ativado, o modo estrito aplica verificações adicionais:
+- Bloqueia e-mails temporários/descartáveis
+- Verifica VPNs e proxies conhecidos
+- Analisa padrões de comportamento suspeitos
+
+<Tip>
+  Ative o modo estrito se você está enfrentando muitas tentativas de fraude, mas esteja ciente de que pode gerar alguns falsos positivos.
+</Tip>
+
+---
+
+## Relatórios de segurança
+
+Acompanhe as tentativas de fraude bloqueadas:
+
+<CardGroup cols={3}>
+  <Card title="Bloqueios hoje" icon="shield">
+    15 tentativas bloqueadas
+  </Card>
+  
+  <Card title="IPs banidos" icon="location-dot">
+    47 endereços na lista
+  </Card>
+  
+  <Card title="E-mails banidos" icon="envelope">
+    23 e-mails bloqueados
+  </Card>
+</CardGroup>
+
+Acesse relatórios detalhados em **Relatórios > Segurança** para análise completa.
+\`\`\`

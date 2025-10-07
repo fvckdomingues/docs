@@ -1,68 +1,104 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Mginex",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#6366F1",
+    "light": "#818CF8",
+    "dark": "#4F46E5"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentação",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Introdução",
+            "pages": ["index", "primeiros-passos"]
+          },
+          {
+            "group": "Plataforma",
+            "pages": ["plataforma/visao-geral", "plataforma/dashboard", "plataforma/produtos"]
+          },
+          {
+            "group": "Pagamentos",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "pagamentos/visao-geral",
+              "pagamentos/metodos",
+              "pagamentos/pix",
+              "pagamentos/cartao-credito",
+              "pagamentos/boleto"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Gateways de Pagamento",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "gateways/pushin-pay",
+              "gateways/efi-pay",
+              "gateways/mercado-pago",
+              "gateways/suitpay",
+              "gateways/stripe"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Vendas",
+            "pages": ["vendas/gestao", "vendas/relatorios", "vendas/analytics"]
+          },
+          {
+            "group": "Segurança",
+            "pages": ["seguranca/anti-fraude", "seguranca/bloqueios", "seguranca/boas-praticas"]
+          },
+          {
+            "group": "Notificações",
+            "pages": ["notificacoes/tempo-real", "notificacoes/webhooks", "notificacoes/configuracao"]
+          },
+          {
+            "group": "Integrações",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "integracoes/visao-geral",
+              "integracoes/utmify",
+              "integracoes/google-analytics",
+              "integracoes/google-ads",
+              "integracoes/google-tag-manager",
+              "integracoes/facebook-pixel",
+              "integracoes/crisp",
+              "integracoes/campos-customizados",
+              "integracoes/redes-sociais"
             ]
           },
           {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
+            "group": "Tutoriais",
+            "pages": ["tutoriais/videos", "tutoriais/configuracao-inicial", "tutoriais/primeiro-produto"]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "API",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Começando",
+            "pages": ["api-reference/introduction", "api-reference/autenticacao", "api-reference/boas-praticas"]
+          },
+          {
+            "group": "Produtos",
             "pages": [
-              "api-reference/introduction"
+              "api-reference/produtos/listar",
+              "api-reference/produtos/criar",
+              "api-reference/produtos/atualizar",
+              "api-reference/produtos/deletar"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Vendas",
+            "pages": ["api-reference/vendas/listar", "api-reference/vendas/detalhes", "api-reference/vendas/status"]
+          },
+          {
+            "group": "Webhooks",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "api-reference/webhooks/configurar",
+              "api-reference/webhooks/eventos",
+              "api-reference/webhooks/seguranca"
             ]
           }
         ]
@@ -71,14 +107,19 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Plataforma",
+          "href": "https://mginex.com",
+          "icon": "globe"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Discord",
+          "href": "https://discord.gg/57TQeUbAgG",
+          "icon": "discord"
+        },
+        {
+          "anchor": "YouTube",
+          "href": "https://www.youtube.com/@mginex",
+          "icon": "youtube"
         }
       ]
     }
@@ -90,33 +131,24 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Instagram",
+        "href": "https://www.instagram.com/mginexbr"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Acessar Plataforma",
+      "href": "https://mginex.com"
     }
   },
   "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+    "options": ["copy", "view", "chatgpt", "claude", "perplexity", "cursor", "vscode"]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "instagram": "https://www.instagram.com/mginexbr",
+      "youtube": "https://www.youtube.com/@mginex",
+      "discord": "https://discord.gg/57TQeUbAgG"
     }
   }
 }

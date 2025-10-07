@@ -1,0 +1,140 @@
+---
+title: 'Visão Geral de Pagamentos'
+description: 'Entenda como funcionam os pagamentos na Mginex'
+icon: 'credit-card'
+---
+
+## Sistema de Pagamentos
+
+A Mginex oferece integração com os principais gateways de pagamento do mercado, permitindo que você aceite diversos métodos de pagamento de forma segura e eficiente.
+
+<CardGroup cols={3}>
+  <Card title="PIX" icon="qrcode">
+    Pagamento instantâneo 24/7
+  </Card>
+  <Card title="Cartão de Crédito" icon="credit-card">
+    Parcelamento em até 12x
+  </Card>
+  <Card title="Boleto" icon="barcode">
+    Pagamento tradicional
+  </Card>
+</CardGroup>
+
+## Gateways Suportados
+
+A Mginex se integra com os principais gateways de pagamento do Brasil:
+
+<AccordionGroup>
+  <Accordion title="Pushin Pay" icon="bolt">
+    Gateway focado em PIX com aprovação instantânea e taxas competitivas.
+  </Accordion>
+
+  <Accordion title="Efí Pay (antiga Gerencianet)" icon="building">
+    Solução completa com PIX, cartão de crédito e boleto bancário.
+  </Accordion>
+
+  <Accordion title="Mercado Pago" icon="money-bill">
+    Gateway popular com diversas opções de pagamento e parcelamento.
+  </Accordion>
+
+  <Accordion title="SuitPay" icon="wallet">
+    Gateway moderno com foco em conversão e experiência do usuário.
+  </Accordion>
+
+  <Accordion title="Stripe" icon="stripe">
+    Solução internacional para pagamentos com cartão de crédito.
+  </Accordion>
+</AccordionGroup>
+
+## Como Funciona
+
+<Steps>
+  <Step title="Cliente Escolhe o Produto">
+    O cliente seleciona o produto que deseja comprar
+  </Step>
+  <Step title="Seleciona Método de Pagamento">
+    Escolhe entre PIX, cartão de crédito ou boleto
+  </Step>
+  <Step title="Processamento">
+    O gateway processa o pagamento de forma segura
+  </Step>
+  <Step title="Confirmação">
+    Você e o cliente recebem notificação da aprovação
+  </Step>
+  <Step title="Entrega Automática">
+    O produto é entregue automaticamente ao cliente
+  </Step>
+</Steps>
+
+## Taxas e Tarifas
+
+Cada gateway possui sua própria estrutura de taxas. Confira os detalhes nas páginas específicas de cada gateway:
+
+<CardGroup cols={2}>
+  <Card title="Pushin Pay" icon="bolt" href="/gateways/pushin-pay">
+    Taxas a partir de 1,99% por transação
+  </Card>
+  <Card title="Efí Pay" icon="building" href="/gateways/efi-pay">
+    Taxas competitivas e sem mensalidade
+  </Card>
+  <Card title="Mercado Pago" icon="money-bill" href="/gateways/mercado-pago">
+    Taxas variáveis por método de pagamento
+  </Card>
+  <Card title="SuitPay" icon="wallet" href="/gateways/suitpay">
+    Taxas transparentes e sem surpresas
+  </Card>
+</CardGroup>
+
+## Segurança
+
+<Warning>
+  Todos os pagamentos são processados de forma segura através dos gateways certificados PCI-DSS.
+</Warning>
+
+### Recursos de Segurança
+
+- **Criptografia SSL**: Todas as transações são criptografadas
+- **Tokenização**: Dados sensíveis nunca são armazenados
+- **3D Secure**: Autenticação adicional para cartões
+- **Anti-Fraude**: Sistema inteligente de detecção de fraudes
+
+<Tip>
+  Ative o sistema anti-fraude da Mginex para proteção adicional contra transações suspeitas.
+</Tip>
+
+## Configuração
+
+Para começar a receber pagamentos, você precisa:
+
+<Steps>
+  <Step title="Escolher um Gateway">
+    Selecione o gateway que melhor atende suas necessidades
+  </Step>
+  <Step title="Criar Conta no Gateway">
+    Cadastre-se diretamente no site do gateway escolhido
+  </Step>
+  <Step title="Obter Credenciais">
+    Copie as chaves de API fornecidas pelo gateway
+  </Step>
+  <Step title="Configurar na Mginex">
+    Cole as credenciais nas configurações da plataforma
+  </Step>
+  <Step title="Testar">
+    Realize uma compra teste para validar a integração
+  </Step>
+</Steps>
+
+## Próximos Passos
+
+<CardGroup cols={3}>
+  <Card title="Métodos de Pagamento" icon="list" href="/pagamentos/metodos">
+    Conheça cada método em detalhes
+  </Card>
+  <Card title="Escolher Gateway" icon="plug" href="/gateways/pushin-pay">
+    Configure seu gateway de pagamento
+  </Card>
+  <Card title="Anti-Fraude" icon="shield-check" href="/seguranca/anti-fraude">
+    Proteja-se contra fraudes
+  </Card>
+</CardGroup>
+\`\`\`

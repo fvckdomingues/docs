@@ -1,0 +1,225 @@
+---
+title: "Gestão de Vendas"
+description: "Gerenciamento de vendas simples e completo"
+---
+
+# Gestão de Vendas
+
+Acompanhe pedidos, filtre períodos, exporte dados e gere relatórios claros para tomar decisões rápidas.
+
+<img src="/images/sales-dashboard.png" alt="Dashboard de vendas" />
+
+---
+
+## Visão geral de pedidos
+
+Tabela completa com todas as informações essenciais:
+
+<CardGroup cols={2}>
+  <Card title="Status do pedido" icon="circle-check">
+    Aprovado, pendente, cancelado ou reembolsado
+  </Card>
+  
+  <Card title="Método de pagamento" icon="credit-card">
+    PIX, cartão, boleto e gateway utilizado
+  </Card>
+  
+  <Card title="Valor e comissões" icon="dollar-sign">
+    Valor bruto, taxas e valor líquido
+  </Card>
+  
+  <Card title="Dados do cliente" icon="user">
+    Nome, e-mail, telefone e localização
+  </Card>
+</CardGroup>
+
+---
+
+## Filtros e segmentações
+
+### Filtros por período
+
+Selecione rapidamente o intervalo de tempo desejado:
+
+<Tabs>
+  <Tab title="Hoje">
+    Visualize todas as vendas do dia atual
+  </Tab>
+  <Tab title="Últimos 7 dias">
+    Acompanhe o desempenho da última semana
+  </Tab>
+  <Tab title="Últimos 30 dias">
+    Análise mensal completa
+  </Tab>
+  <Tab title="Personalizado">
+    Escolha data inicial e final específicas
+  </Tab>
+</Tabs>
+
+### Segmentações rápidas
+
+Filtre suas vendas por diferentes critérios:
+
+<AccordionGroup>
+  <Accordion icon="circle-check" title="Por status">
+    - Aprovadas
+    - Pendentes
+    - Canceladas
+    - Reembolsadas
+    - Chargebacks
+  </Accordion>
+  
+  <Accordion icon="credit-card" title="Por gateway">
+    - PIX
+    - Pushin Pay
+    - Efí Pay
+    - Mercado Pago
+    - SuitPay
+    - Stripe
+  </Accordion>
+  
+  <Accordion icon="box" title="Por produto">
+    Filtre vendas de produtos específicos para análise individual
+  </Accordion>
+  
+  <Accordion icon="chart-line" title="Por origem">
+    - Orgânico
+    - Google Ads
+    - Facebook Ads
+    - Instagram
+    - Afiliados
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Exportação de dados
+
+Exporte seus dados para análise externa ou integração com outras ferramentas:
+
+<Steps>
+  <Step title="Aplique os filtros">
+    Selecione o período e segmentações desejadas
+  </Step>
+  
+  <Step title="Escolha o formato">
+    - **CSV** - Para Excel, Google Sheets
+    - **Excel** - Arquivo .xlsx nativo
+    - **JSON** - Para integrações via API
+  </Step>
+  
+  <Step title="Baixe o arquivo">
+    O download inicia automaticamente
+  </Step>
+</Steps>
+
+<Tip>
+  Use a exportação CSV para integrar com seu sistema de contabilidade ou BI (Business Intelligence).
+</Tip>
+
+---
+
+## Relatórios de desempenho
+
+Análises automáticas para você entender seu negócio:
+
+### Métricas principais
+
+<CardGroup cols={2}>
+  <Card title="Receita total" icon="dollar-sign">
+    R$ 45.890,00
+    <br />
+    <span style={{color: 'green'}}>↑ 23% vs. mês anterior</span>
+  </Card>
+  
+  <Card title="Ticket médio" icon="receipt">
+    R$ 127,50
+    <br />
+    <span style={{color: 'green'}}>↑ 8% vs. mês anterior</span>
+  </Card>
+  
+  <Card title="Taxa de conversão" icon="percentage">
+    3.2%
+    <br />
+    <span style={{color: 'red'}}>↓ 0.5% vs. mês anterior</span>
+  </Card>
+  
+  <Card title="Chargebacks" icon="rotate-left">
+    0.8%
+    <br />
+    <span style={{color: 'green'}}>↓ 0.3% vs. mês anterior</span>
+  </Card>
+</CardGroup>
+
+### Análises por categoria
+
+Entenda os produtos que mais vendem e seus canais mais eficazes:
+
+<Tabs>
+  <Tab title="Top produtos">
+    | Produto | Vendas | Receita |
+    |---------|--------|---------|
+    | Curso de Marketing Digital | 145 | R$ 18.125 |
+    | E-book de Vendas | 289 | R$ 8.670 |
+    | Template de Instagram | 412 | R$ 12.360 |
+  </Tab>
+  
+  <Tab title="Canais de venda">
+    | Canal | Conversão | Receita |
+    |-------|-----------|---------|
+    | Instagram | 4.2% | R$ 19.450 |
+    | Google Ads | 2.8% | R$ 15.230 |
+    | Orgânico | 3.5% | R$ 11.210 |
+  </Tab>
+  
+  <Tab title="Métodos de pagamento">
+    | Método | % Vendas | Ticket médio |
+    |--------|----------|--------------|
+    | PIX | 62% | R$ 115,00 |
+    | Cartão de crédito | 35% | R$ 156,00 |
+    | Boleto | 3% | R$ 98,00 |
+  </Tab>
+</Tabs>
+
+---
+
+## Detalhes do pedido
+
+Clique em qualquer pedido para ver informações completas:
+
+<AccordionGroup>
+  <Accordion icon="user" title="Informações do cliente">
+    - Nome completo
+    - E-mail e telefone
+    - CPF/CNPJ
+    - Endereço (se aplicável)
+    - Histórico de compras
+  </Accordion>
+  
+  <Accordion icon="box" title="Produtos comprados">
+    - Lista de produtos
+    - Quantidade e valores
+    - Links de download
+    - Status de entrega
+  </Accordion>
+  
+  <Accordion icon="credit-card" title="Informações de pagamento">
+    - Gateway utilizado
+    - Método de pagamento
+    - Status da transação
+    - ID da transação
+    - Taxas aplicadas
+  </Accordion>
+  
+  <Accordion icon="clock" title="Timeline do pedido">
+    - Data e hora da compra
+    - Aprovação do pagamento
+    - Entrega do produto
+    - Eventos adicionais
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  Você pode reenviar o produto, emitir reembolso ou entrar em contato com o cliente diretamente da página de detalhes do pedido.
+</Note>
+\`\`\`
