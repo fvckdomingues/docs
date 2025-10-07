@@ -1,0 +1,145 @@
+---
+title: 'Carteira'
+description: 'Gerencie seu saldo e realize saques'
+icon: 'wallet'
+---
+
+<img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%7B9CE3F5BD-CD30-430C-834B-44E1696F10D9%7D-hksqPhJPgEdvOHg60SakrPgd4h2Ire.png" alt="Carteira Mginex" />
+
+## Visão Geral
+
+A carteira da Mginex é onde você acompanha todo o dinheiro que entra na sua loja e realiza saques para sua conta bancária.
+
+## Saldos
+
+<CardGroup cols={2}>
+  <Card title="Saldo Disponível" icon="money-bill-wave">
+    Valor que você pode sacar imediatamente para sua conta bancária.
+  </Card>
+  
+  <Card title="Saldo Retido" icon="lock">
+    Valor temporariamente retido por questões de segurança ou processamento de pagamentos.
+  </Card>
+</CardGroup>
+
+<Info>
+  O saldo retido é liberado automaticamente após o período de segurança estabelecido pelo gateway de pagamento (geralmente 7-30 dias).
+</Info>
+
+## Abas da Carteira
+
+### Saques
+
+Visualize todos os saques realizados:
+
+<AccordionGroup>
+  <Accordion title="ID do Saque" icon="hashtag">
+    Identificador único de cada solicitação de saque
+  </Accordion>
+  
+  <Accordion title="Valor" icon="dollar-sign">
+    Quantia solicitada para saque
+  </Accordion>
+  
+  <Accordion title="Status" icon="circle-check">
+    - **Aprovado**: Saque processado e enviado
+    - **Pendente**: Aguardando processamento
+    - **Cancelado**: Saque não foi concluído
+  </Accordion>
+  
+  <Accordion title="Data" icon="calendar">
+    Data e hora da solicitação do saque
+  </Accordion>
+</AccordionGroup>
+
+### Transações
+
+Acompanhe todas as movimentações financeiras:
+
+- Vendas aprovadas
+- Estornos
+- Taxas cobradas
+- Saques realizados
+
+## Como Realizar um Saque
+
+<Steps>
+  <Step title="Verificar Saldo Disponível">
+    Certifique-se de que possui saldo disponível suficiente
+  </Step>
+  
+  <Step title="Clicar em Realizar Saque">
+    Clique no botão roxo **Realizar saque** no canto superior direito
+  </Step>
+  
+  <Step title="Informar Dados Bancários">
+    Se for seu primeiro saque, você precisará cadastrar:
+    - Banco
+    - Agência
+    - Número da conta
+    - Tipo de conta (corrente ou poupança)
+    - CPF/CNPJ do titular
+  </Step>
+  
+  <Step title="Definir Valor">
+    Digite o valor que deseja sacar (mínimo geralmente é R$ 10,00)
+  </Step>
+  
+  <Step title="Confirmar Saque">
+    Revise as informações e confirme a solicitação
+  </Step>
+</Steps>
+
+<Warning>
+  Verifique cuidadosamente seus dados bancários antes de confirmar. Saques enviados para contas incorretas não podem ser revertidos.
+</Warning>
+
+## Prazos de Saque
+
+<CardGroup cols={2}>
+  <Card title="Processamento" icon="clock">
+    Saques são processados em até 2 dias úteis após a solicitação
+  </Card>
+  
+  <Card title="Recebimento" icon="building-columns">
+    O valor aparece na sua conta bancária em até 1 dia útil após o processamento
+  </Card>
+</CardGroup>
+
+## Taxas
+
+<Info>
+  A Mginex não cobra taxas sobre saques. As únicas taxas aplicadas são as dos gateways de pagamento no momento da venda.
+</Info>
+
+## Dados Pessoais
+
+Acesse a aba **Dados Pessoais** para:
+- Visualizar informações bancárias cadastradas
+- Atualizar dados da conta
+- Adicionar novas contas bancárias
+
+<Tip>
+  Configure notificações para receber alertas quando um saque for aprovado ou quando houver novas transações na sua carteira.
+</Tip>
+
+## Perguntas Frequentes
+
+<AccordionGroup>
+  <Accordion title="Por que meu saldo está retido?" icon="question">
+    O saldo fica retido por segurança durante o período de análise de risco do gateway de pagamento. Isso protege tanto você quanto seus clientes contra fraudes.
+  </Accordion>
+  
+  <Accordion title="Qual o valor mínimo para saque?" icon="question">
+    O valor mínimo geralmente é R$ 10,00, mas pode variar dependendo do gateway de pagamento configurado.
+  </Accordion>
+  
+  <Accordion title="Posso cancelar um saque?" icon="question">
+    Saques pendentes podem ser cancelados. Após aprovados, não é mais possível cancelar.
+  </Accordion>
+  
+  <Accordion title="Para onde vai o dinheiro dos estornos?" icon="question">
+    Quando há um estorno, o valor é deduzido do seu saldo disponível ou retido, dependendo do status da transação original.
+  </Accordion>
+</AccordionGroup>
+\`\`\`

@@ -10,6 +10,7 @@ description: "A plataforma completa para criar e gerenciar sua loja de produtos 
   src="/images/hero-light.png"
   alt="Mginex Hero Light"
 />
+
 <img
   className="hidden dark:block"
   src="/images/hero-dark.png"
@@ -23,78 +24,71 @@ A Mginex é a plataforma ideal para você criar o site perfeito para sua loja de
 Na Mginex, você tem **liberdade**, **praticidade** e tudo o que precisa para vender mais.
 
 <CardGroup cols={2}>
-  <Card
-    title="Início Rápido"
-    icon="rocket"
-    href="/quickstart"
-  >
+  <Card title="Início Rápido" icon="rocket" href="/primeiros-passos">
     Comece a criar sua loja em minutos
   </Card>
-  <Card
-    title="Métodos de Pagamento"
-    icon="credit-card"
-    href="/recursos/pagamentos"
-  >
+  <Card title="Criar Produtos" icon="box" href="/catalogo/criar-produto">
+    Adicione seus produtos digitais
+  </Card>
+  <Card title="Configurar Pagamentos" icon="credit-card" href="/pagamentos/configurar">
     Aceite PIX, cartões, boleto e muito mais
   </Card>
-  <Card
-    title="Integrações"
-    icon="plug"
-    href="/integracoes/utmify"
-  >
-    Conecte-se às principais plataformas do mercado
-  </Card>
-  <Card
-    title="API Reference"
-    icon="code"
-    href="/api-reference/introduction"
-  >
-    Integre seus sistemas com nossa API
+  <Card title="Integrações" icon="plug" href="/integracoes/visao-geral">
+    Conecte-se às principais plataformas
   </Card>
 </CardGroup>
 
 ## Principais Recursos
 
 <AccordionGroup>
-  <Accordion icon="bolt" title="Aprovação Instantânea">
-    Pagamentos processados em segundos com 100% de segurança. Sistema PCI DSS compliant com configuração rápida em apenas 5 minutos.
+  <Accordion title="Dashboard Completo" icon="gauge-high">
+    Acompanhe em tempo real o faturamento, vendas, taxa de conversão e ticket médio da sua loja. Visualize gráficos detalhados e tome decisões baseadas em dados.
   </Accordion>
-
-  <Accordion icon="bell" title="Notificações em Tempo Real">
-    Receba notificações instantâneas de todas as suas vendas, novos usuários e métricas importantes da sua loja.
+  <Accordion title="Gestão de Produtos" icon="box">
+    Crie produtos com descrições ricas, imagens, vídeos do YouTube, variações e muito mais. Organize tudo em categorias e personalize o layout da sua loja.
   </Accordion>
-
-  <Accordion icon="shield-halved" title="Anti-fraude Inteligente">
-    Controle de risco objetivo: bloqueie bancos indesejados e bana clientes por IP ou e-mail. Simples, transparente e sob seu controle.
+  <Accordion title="Sistema de Cupons" icon="ticket">
+    Crie cupons de desconto para impulsionar suas vendas. Acompanhe o uso e o total de desconto aplicado em cada cupom.
   </Accordion>
-
-  <Accordion icon="chart-line" title="Gestão de Vendas Completa">
-    Acompanhe pedidos, filtre períodos, exporte dados e gere relatórios claros para tomar decisões rápidas.
+  <Accordion title="Anti-fraude Inteligente" icon="shield-halved">
+    Proteja sua loja com sistema anti-fraude. Bloqueie bancos indesejados e clientes por IP ou e-mail de forma simples e transparente.
+  </Accordion>
+  <Accordion title="Gestão de Equipe" icon="users">
+    Adicione membros à sua equipe e controle as permissões de cada um. Trabalhe de forma colaborativa com total segurança.
+  </Accordion>
+  <Accordion title="Chat ao Vivo" icon="comments">
+    Converse com seus clientes em tempo real através do chat integrado em cada produto. Tire dúvidas e aumente suas conversões.
   </Accordion>
 </AccordionGroup>
 
 ## Aceite Todos os Métodos de Pagamento
 
-Integre com os principais gateways de pagamento do Brasil e do mundo. Ofereça PIX, cartões de crédito, boleto e muito mais para seus clientes.
+Integre com os principais gateways de pagamento do Brasil e do mundo. Configure tudo pelo dashboard sem precisar programar.
 
-<CardGroup cols={2}>
+<CardGroup cols={3}>
+  <Card title="Pushin Pay" icon="bolt">
+    Gateway brasileiro com aprovação instantânea
+  </Card>
+  <Card title="Efí Pay" icon="building">
+    Antiga Gerencianet, referência no mercado
+  </Card>
+  <Card title="Mercado Pago" icon="money-bill">
+    Solução completa do Mercado Livre
+  </Card>
+  <Card title="SuitPay" icon="wallet">
+    Gateway moderno e eficiente
+  </Card>
+  <Card title="Stripe" icon="stripe">
+    Pagamentos internacionais
+  </Card>
   <Card title="PIX" icon="qrcode">
-    Pagamento instantâneo criado pelo Banco Central do Brasil
-  </Card>
-  <Card title="Cartões" icon="credit-card">
-    Aceite todas as bandeiras de cartão de crédito e débito
-  </Card>
-  <Card title="Boleto" icon="barcode">
-    Opção tradicional para seus clientes
-  </Card>
-  <Card title="+15 Métodos" icon="wallet">
-    Diversas opções de pagamento disponíveis
+    Pagamento instantâneo brasileiro
   </Card>
 </CardGroup>
 
 ## Conecte-se às Principais Plataformas
 
-A Mginex integra com as ferramentas mais usadas para impulsionar suas vendas: chats em tempo real, sistemas de análise, monitoramento de pixels, automações e muito mais.
+A Mginex integra com as ferramentas mais usadas para impulsionar suas vendas.
 
 <CardGroup cols={3}>
   <Card title="Utmify" icon="chart-mixed" href="/integracoes/utmify">
@@ -120,21 +114,10 @@ A Mginex integra com as ferramentas mais usadas para impulsionar suas vendas: ch
 ## Comece Agora
 
 <CardGroup cols={2}>
-  <Card
-    title="Criar Conta Grátis"
-    icon="user-plus"
-    href="https://mginex.com"
-  >
+  <Card title="Criar Conta Grátis" icon="user-plus" href="https://mginex.com">
     Crie sua loja online gratuitamente
   </Card>
-  <Card
-    title="Ver Tutoriais"
-    icon="video"
-    href="/tutoriais/videos"
-  >
+  <Card title="Ver Tutoriais" icon="video" href="/tutoriais/videos">
     Aprenda com nossos vídeos passo a passo
   </Card>
 </CardGroup>
-\`\`\`
-
-```mdx file="" isHidden

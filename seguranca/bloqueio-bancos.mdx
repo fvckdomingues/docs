@@ -1,0 +1,147 @@
+---
+title: 'Bloqueio de Bancos'
+description: 'Configure quais bancos não podem ser usados para pagamentos'
+icon: 'building-columns'
+---
+
+<img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%7B48D55446-E273-482B-8AA5-55436E91293D%7D-6xoxCpinPFX7oJaIky66F8St25fHAi.png" alt="Bloqueador de Bancos" />
+
+## O que é Bloqueio de Bancos?
+
+O bloqueador de bancos permite que você impeça pagamentos originados de instituições financeiras específicas. Isso ajuda a prevenir fraudes de bancos digitais frequentemente usados em golpes.
+
+## Bancos Disponíveis para Bloqueio
+
+A Mginex oferece bloqueio para os principais bancos brasileiros:
+
+<CardGroup cols={3}>
+  <Card title="Nu Pagamentos S.A." icon="building-columns">
+    Nubank
+  </Card>
+  
+  <Card title="Banco Itaucard S.A." icon="building-columns">
+    Itaucard
+  </Card>
+  
+  <Card title="Itaú Unibanco S.A." icon="building-columns">
+    Itaú
+  </Card>
+  
+  <Card title="Picpay Serviços S.A." icon="building-columns">
+    PicPay
+  </Card>
+  
+  <Card title="Banco Bradesco S.A." icon="building-columns">
+    Bradesco
+  </Card>
+  
+  <Card title="Banco do Brasil S.A." icon="building-columns">
+    Banco do Brasil
+  </Card>
+  
+  <Card title="Caixa Econômica Federal" icon="building-columns">
+    Caixa
+  </Card>
+  
+  <Card title="Banco Inter S.A." icon="building-columns">
+    Inter
+  </Card>
+</CardGroup>
+
+## Como Configurar
+
+<Steps>
+  <Step title="Acessar Configurações">
+    No menu lateral, vá em **Anti Fraude** e clique em **Bloqueador de bancos**
+  </Step>
+  
+  <Step title="Selecionar Bancos">
+    Ative o toggle ao lado de cada banco que deseja bloquear
+  </Step>
+  
+  <Step title="Salvar Alterações">
+    Clique em **Salvar alterações** no canto superior direito
+  </Step>
+</Steps>
+
+## Como Funciona
+
+Quando um banco está bloqueado:
+
+<AccordionGroup>
+  <Accordion title="Pagamentos com Cartão" icon="credit-card">
+    Cartões emitidos pelo banco bloqueado serão recusados automaticamente durante o checkout.
+  </Accordion>
+  
+  <Accordion title="PIX" icon="pix">
+    Pagamentos PIX originados de contas do banco bloqueado não serão aceitos.
+  </Accordion>
+  
+  <Accordion title="Mensagem ao Cliente" icon="message">
+    O cliente receberá uma mensagem informando que o método de pagamento não é aceito.
+  </Accordion>
+</AccordionGroup>
+
+## Quando Bloquear Bancos
+
+<Warning>
+  Bloqueie bancos com cautela, pois isso pode afetar clientes legítimos. Use esta funcionalidade apenas quando houver um padrão claro de fraudes.
+</Warning>
+
+### Situações Recomendadas
+
+<CardGroup cols={2}>
+  <Card title="Alto Índice de Chargebacks" icon="chart-line">
+    Se você identificar que a maioria dos chargebacks vem de um banco específico, considere bloqueá-lo temporariamente.
+  </Card>
+  
+  <Card title="Fraudes Recorrentes" icon="shield-halved">
+    Quando detectar múltiplas tentativas de fraude usando cartões do mesmo banco.
+  </Card>
+  
+  <Card title="Bancos Digitais Problemáticos" icon="mobile">
+    Alguns bancos digitais facilitam a criação de contas anônimas, aumentando o risco de fraude.
+  </Card>
+  
+  <Card title="Análise de Risco" icon="magnifying-glass-chart">
+    Baseado em dados históricos da sua loja, identifique bancos com maior taxa de problemas.
+  </Card>
+</CardGroup>
+
+## Impacto nos Clientes
+
+<Info>
+  Lembre-se que bloquear bancos populares como Nubank, Inter ou PicPay pode reduzir significativamente suas vendas, pois muitos brasileiros usam essas instituições.
+</Info>
+
+### Alternativas ao Bloqueio Total
+
+Em vez de bloquear completamente um banco, considere:
+
+- Usar análise manual para pedidos desse banco
+- Aumentar o tempo de liberação do produto
+- Solicitar verificação adicional de identidade
+- Combinar com outras medidas anti-fraude
+
+## Monitoramento
+
+Após configurar bloqueios de banco:
+
+<Steps>
+  <Step title="Acompanhe as Métricas">
+    Monitore se houve redução nas tentativas de fraude
+  </Step>
+  
+  <Step title="Analise o Impacto nas Vendas">
+    Verifique se o bloqueio não está afetando negativamente suas vendas legítimas
+  </Step>
+  
+  <Step title="Ajuste Conforme Necessário">
+    Remova bloqueios que não estão trazendo benefícios ou adicione novos conforme padrões de fraude mudam
+  </Step>
+</Steps>
+
+<Tip>
+  Combine o bloqueio de bancos com bloqueio de IPs e análise de comportamento para criar uma estratégia anti-fraude mais eficaz.
+</Tip>
+\`\`\`

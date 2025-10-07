@@ -1,0 +1,113 @@
+---
+title: 'PIX'
+description: 'Configure pagamentos via PIX na sua loja'
+icon: 'pix'
+---
+
+## O que é PIX?
+
+PIX é o sistema de pagamentos instantâneos do Banco Central do Brasil. Com ele, seus clientes podem pagar em segundos, 24 horas por dia, 7 dias por semana.
+
+## Vantagens do PIX
+
+<CardGroup cols={2}>
+  <Card title="Aprovação Instantânea" icon="bolt">
+    Pagamentos são confirmados em até 10 segundos
+  </Card>
+  
+  <Card title="Disponível 24/7" icon="clock">
+    Funciona todos os dias, inclusive feriados e finais de semana
+  </Card>
+  
+  <Card title="Taxas Menores" icon="dollar-sign">
+    Geralmente possui as menores taxas entre os métodos de pagamento
+  </Card>
+  
+  <Card title="Sem Estorno" icon="shield-check">
+    Pagamentos PIX não podem ser estornados, reduzindo fraudes
+  </Card>
+</CardGroup>
+
+## Como Funciona
+
+<Steps>
+  <Step title="Cliente Escolhe PIX">
+    No checkout, o cliente seleciona PIX como forma de pagamento
+  </Step>
+  
+  <Step title="QR Code é Gerado">
+    Um QR Code único é exibido na tela
+  </Step>
+  
+  <Step title="Cliente Escaneia">
+    O cliente abre o app do banco e escaneia o QR Code
+  </Step>
+  
+  <Step title="Confirmação Instantânea">
+    Em segundos, o pagamento é confirmado e o produto é entregue
+  </Step>
+</Steps>
+
+## Gateways que Suportam PIX
+
+Todos os gateways integrados à Mginex suportam PIX:
+
+<CardGroup cols={3}>
+  <Card title="Pushin Pay" icon="bolt">
+    Especializado em PIX
+  </Card>
+  
+  <Card title="Efí Pay" icon="building">
+    PIX + outros métodos
+  </Card>
+  
+  <Card title="Mercado Pago" icon="money-bill">
+    PIX integrado
+  </Card>
+  
+  <Card title="SuitPay" icon="wallet">
+    PIX otimizado
+  </Card>
+</CardGroup>
+
+## Configuração
+
+Para aceitar PIX, você precisa:
+
+1. Ter um gateway de pagamento configurado
+2. Ativar o PIX nas configurações do gateway
+3. Configurar sua chave PIX no gateway
+
+<Info>
+  A configuração do PIX é feita diretamente no painel do gateway de pagamento escolhido.
+</Info>
+
+## Taxas
+
+As taxas do PIX variam por gateway:
+
+- **Pushin Pay**: A partir de 1,99%
+- **Efí Pay**: A partir de 0,99%
+- **Mercado Pago**: Aproximadamente 0,99%
+- **SuitPay**: Consulte o gateway
+
+<Tip>
+  PIX geralmente tem as menores taxas entre todos os métodos de pagamento.
+</Tip>
+
+## Boas Práticas
+
+<AccordionGroup>
+  <Accordion title="Defina um Tempo Limite" icon="clock">
+    Configure um prazo de expiração para o QR Code (recomendado: 15-30 minutos)
+  </Accordion>
+  
+  <Accordion title="Envie Lembretes" icon="bell">
+    Configure notificações automáticas para lembrar clientes que não completaram o pagamento
+  </Accordion>
+  
+  <Accordion title="Ofereça Suporte Rápido" icon="headset">
+    Tenha um canal de suporte disponível para dúvidas sobre PIX
+  </Accordion>
+</AccordionGroup>
+\`\`\`

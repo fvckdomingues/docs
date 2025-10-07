@@ -1,0 +1,107 @@
+---
+title: 'Bloqueio de IP'
+description: 'Bloqueie endereços IP suspeitos para proteger sua loja'
+icon: 'shield'
+---
+
+<img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%7B819B2D34-C9A2-49CE-9F57-C79C95C09FEA%7D-GloMpvb2HF2pKzMOyiQg5ywuhVV4Wp.png" alt="Lista de Bloqueios de IP" />
+
+## O que é Bloqueio de IP?
+
+O bloqueio de IP permite que você impeça que endereços IP específicos acessem sua loja. Isso é útil para prevenir fraudes, ataques automatizados e comportamentos suspeitos.
+
+## Como Criar um Bloqueio
+
+<Steps>
+  <Step title="Acessar Lista de Bloqueios">
+    No menu lateral, vá em **Anti Fraude** e clique em **Lista de bloqueios**
+  </Step>
+  
+  <Step title="Criar Novo Bloqueio">
+    Clique no botão **Criar bloqueio** no canto superior direito
+  </Step>
+  
+  <Step title="Inserir Informações">
+    - Digite o endereço IP que deseja bloquear
+    - Ou insira um e-mail para bloquear todas as compras desse usuário
+    - Adicione uma observação (opcional)
+  </Step>
+  
+  <Step title="Confirmar Bloqueio">
+    Clique em **Salvar** para ativar o bloqueio imediatamente
+  </Step>
+</Steps>
+
+## Tipos de Bloqueio
+
+<CardGroup cols={2}>
+  <Card title="Bloqueio por IP" icon="network-wired">
+    Bloqueia um endereço IP específico. Útil para impedir acessos de localizações suspeitas ou ataques automatizados.
+  </Card>
+  
+  <Card title="Bloqueio por E-mail" icon="envelope">
+    Bloqueia todas as tentativas de compra usando um e-mail específico, independente do IP usado.
+  </Card>
+</CardGroup>
+
+## Gerenciar Bloqueios
+
+### Visualizar Bloqueios Ativos
+
+A lista mostra todos os bloqueios configurados com:
+- **Valor**: O IP ou e-mail bloqueado
+- **Tipo**: Se é bloqueio de IP ou e-mail
+- **Criado há**: Quanto tempo atrás o bloqueio foi criado
+- **Ações**: Botão para excluir o bloqueio
+
+### Filtrar Bloqueios
+
+Use a barra de pesquisa para encontrar bloqueios específicos:
+\`\`\`
+Procure pelo IP ou e-mail
+\`\`\`
+
+### Remover Bloqueio
+
+Para desbloquear um IP ou e-mail:
+1. Localize o bloqueio na lista
+2. Clique no botão vermelho **Excluir**
+3. Confirme a remoção
+
+<Warning>
+  Ao remover um bloqueio, o IP ou e-mail terá acesso imediato à sua loja novamente.
+</Warning>
+
+## Quando Usar Bloqueios
+
+<AccordionGroup>
+  <Accordion title="Tentativas de Fraude" icon="triangle-exclamation">
+    Bloqueie IPs que realizaram múltiplas tentativas de compra com cartões diferentes ou dados suspeitos.
+  </Accordion>
+  
+  <Accordion title="Chargebacks Recorrentes" icon="credit-card">
+    Se um cliente realizou chargebacks (estornos) em compras anteriores, bloqueie seu e-mail para evitar novos problemas.
+  </Accordion>
+  
+  <Accordion title="Ataques Automatizados" icon="robot">
+    Bloqueie IPs que estão fazendo requisições excessivas ou tentando acessar sua loja de forma automatizada.
+  </Accordion>
+  
+  <Accordion title="Comportamento Abusivo" icon="ban">
+    Usuários que abusam do suporte, fazem spam ou violam os termos de uso podem ter seus IPs bloqueados.
+  </Accordion>
+</AccordionGroup>
+
+## Boas Práticas
+
+<Tip>
+  - Documente o motivo de cada bloqueio para referência futura
+  - Revise periodicamente a lista de bloqueios para remover IPs que não são mais uma ameaça
+  - Combine bloqueios de IP com bloqueios de banco para máxima proteção
+  - Use bloqueios temporários quando apropriado
+</Tip>
+
+<Info>
+  Os bloqueios são aplicados imediatamente e afetam todas as tentativas de acesso e compra na sua loja.
+</Info>
+\`\`\`

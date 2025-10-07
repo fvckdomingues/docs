@@ -1,0 +1,104 @@
+---
+title: 'Pushin Pay'
+description: 'Configure o gateway Pushin Pay na sua loja'
+icon: 'bolt'
+---
+
+<img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%7B68B801B7-5809-4E21-8548-1A3E9921DA9F%7D-mbJkYzUm29UhZz89IRIIiEqQcsP9Wi.png" alt="Métodos de Pagamento" />
+
+## O que é Pushin Pay?
+
+Pushin Pay é uma infraestrutura para pagamentos com 99,98% de disponibilidade, transacionando mais de 100.000 operações por dia.
+
+## Características
+
+<CardGroup cols={2}>
+  <Card title="Alta Disponibilidade" icon="server">
+    99,98% de uptime garantido
+  </Card>
+  
+  <Card title="Processamento Rápido" icon="gauge-high">
+    Mais de 100.000 operações diárias
+  </Card>
+  
+  <Card title="PIX Instantâneo" icon="bolt">
+    Aprovação em segundos
+  </Card>
+  
+  <Card title="Suporte Dedicado" icon="headset">
+    Equipe disponível para ajudar
+  </Card>
+</CardGroup>
+
+## Como Instalar
+
+<Steps>
+  <Step title="Acessar Configurações">
+    No menu lateral da Mginex, vá em **Pagamentos**
+  </Step>
+  
+  <Step title="Selecionar Pushin Pay">
+    Clique no botão **Instalar** no card do Pushin Pay
+  </Step>
+  
+  <Step title="Criar Conta">
+    Se ainda não tem conta, crie uma em [pushinpay.com.br](https://pushinpay.com.br)
+  </Step>
+  
+  <Step title="Obter Credenciais">
+    No painel do Pushin Pay, copie:
+    - Client ID
+    - Client Secret
+    - Webhook Secret
+  </Step>
+  
+  <Step title="Configurar na Mginex">
+    Cole as credenciais nos campos correspondentes e clique em **Salvar**
+  </Step>
+  
+  <Step title="Testar Integração">
+    Realize uma compra teste para validar a configuração
+  </Step>
+</Steps>
+
+## Métodos de Pagamento
+
+O Pushin Pay suporta:
+
+- **PIX**: Pagamento instantâneo
+- **Cartão de Crédito**: Parcelamento disponível
+- **Boleto Bancário**: Pagamento tradicional
+
+## Taxas
+
+<Info>
+  As taxas do Pushin Pay variam de acordo com o volume de transações. Entre em contato com o Pushin Pay para negociar as melhores condições.
+</Info>
+
+Taxas aproximadas:
+- PIX: A partir de 1,99%
+- Cartão de Crédito: A partir de 3,99%
+- Boleto: Taxa fixa por boleto
+
+## Configurações Avançadas
+
+<AccordionGroup>
+  <Accordion title="Webhook" icon="webhook">
+    Configure o webhook para receber notificações automáticas de pagamentos aprovados, recusados ou estornados.
+  </Accordion>
+  
+  <Accordion title="Split de Pagamento" icon="split">
+    Divida automaticamente os pagamentos entre múltiplas contas (útil para marketplaces).
+  </Accordion>
+  
+  <Accordion title="Parcelamento" icon="credit-card">
+    Configure o número máximo de parcelas e se haverá juros.
+  </Accordion>
+</AccordionGroup>
+
+## Suporte
+
+<Card title="Precisa de Ajuda?" icon="headset">
+  Entre em contato com o suporte do Pushin Pay através do site oficial ou do chat da plataforma.
+</Card>
+\`\`\`

@@ -18,40 +18,48 @@
             "pages": ["index", "primeiros-passos"]
           },
           {
-            "group": "Plataforma",
-            "pages": ["plataforma/visao-geral", "plataforma/dashboard", "plataforma/produtos"]
+            "group": "Dashboard",
+            "pages": ["dashboard/visao-geral", "dashboard/metricas"]
+          },
+          {
+            "group": "Catálogo",
+            "pages": ["catalogo/produtos", "catalogo/criar-produto", "catalogo/categorias", "catalogo/layout"]
+          },
+          {
+            "group": "Vendas",
+            "pages": ["vendas/gerenciar", "vendas/cupons", "vendas/relatorios"]
+          },
+          {
+            "group": "Clientes",
+            "pages": ["clientes/gerenciar", "clientes/usuarios"]
+          },
+          {
+            "group": "Financeiro",
+            "pages": ["financeiro/carteira", "financeiro/saques"]
+          },
+          {
+            "group": "Equipe",
+            "pages": ["equipe/membros"]
+          },
+          {
+            "group": "Afiliados",
+            "pages": ["afiliados/gerenciar", "afiliados/criar"]
+          },
+          {
+            "group": "Segurança",
+            "pages": ["seguranca/anti-fraude", "seguranca/bloqueio-ip", "seguranca/bloqueio-bancos"]
           },
           {
             "group": "Pagamentos",
             "pages": [
               "pagamentos/visao-geral",
-              "pagamentos/metodos",
               "pagamentos/pix",
-              "pagamentos/cartao-credito",
-              "pagamentos/boleto"
+              "pagamentos/pushin-pay",
+              "pagamentos/efi-pay",
+              "pagamentos/mercado-pago",
+              "pagamentos/suitpay",
+              "pagamentos/stripe"
             ]
-          },
-          {
-            "group": "Gateways de Pagamento",
-            "pages": [
-              "gateways/pushin-pay",
-              "gateways/efi-pay",
-              "gateways/mercado-pago",
-              "gateways/suitpay",
-              "gateways/stripe"
-            ]
-          },
-          {
-            "group": "Vendas",
-            "pages": ["vendas/gestao", "vendas/relatorios", "vendas/analytics"]
-          },
-          {
-            "group": "Segurança",
-            "pages": ["seguranca/anti-fraude", "seguranca/bloqueios", "seguranca/boas-praticas"]
-          },
-          {
-            "group": "Notificações",
-            "pages": ["notificacoes/tempo-real", "notificacoes/webhooks", "notificacoes/configuracao"]
           },
           {
             "group": "Integrações",
@@ -64,42 +72,20 @@
               "integracoes/facebook-pixel",
               "integracoes/crisp",
               "integracoes/campos-customizados",
-              "integracoes/redes-sociais"
+              "integracoes/notificacoes"
             ]
+          },
+          {
+            "group": "Personalização",
+            "pages": ["personalizacao/aparencia", "personalizacao/tema", "personalizacao/template"]
+          },
+          {
+            "group": "Feedbacks",
+            "pages": ["feedbacks/gerenciar"]
           },
           {
             "group": "Tutoriais",
-            "pages": ["tutoriais/videos", "tutoriais/configuracao-inicial", "tutoriais/primeiro-produto"]
-          }
-        ]
-      },
-      {
-        "tab": "API",
-        "groups": [
-          {
-            "group": "Começando",
-            "pages": ["api-reference/introduction", "api-reference/autenticacao", "api-reference/boas-praticas"]
-          },
-          {
-            "group": "Produtos",
-            "pages": [
-              "api-reference/produtos/listar",
-              "api-reference/produtos/criar",
-              "api-reference/produtos/atualizar",
-              "api-reference/produtos/deletar"
-            ]
-          },
-          {
-            "group": "Vendas",
-            "pages": ["api-reference/vendas/listar", "api-reference/vendas/detalhes", "api-reference/vendas/status"]
-          },
-          {
-            "group": "Webhooks",
-            "pages": [
-              "api-reference/webhooks/configurar",
-              "api-reference/webhooks/eventos",
-              "api-reference/webhooks/seguranca"
-            ]
+            "pages": ["tutoriais/videos"]
           }
         ]
       }
